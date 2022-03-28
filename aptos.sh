@@ -4,7 +4,7 @@ curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash
 
 sudo apt update && apt install jq -y
 sudo apt install curl
-if exists docker; then
+if docker > /dev/null 2>&1; then
 	echo ''
 else
   curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh

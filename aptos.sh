@@ -1,16 +1,10 @@
 #!/bin/bash
 
 sudo apt update 
-sudo apt install curl -y
-apt install jq -y
-sudo apt install screen -y 
-screen -S aptos
+sudo apt install curl -y && apt install jq -y
+clear
 
-curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 2
-
-sleep 2
-
-echo -e '\n\e[42mLaunched screen session. You can press \e[31m\e[1mCtrl+A, D\e[0m\e[42m to detach the screen session and execute \e[31m\e[1mscreen -r aptos \e[0m\e[42mto reattach it.\e[0m\n' && sleep 2
+curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 3
 
 if docker > /dev/null 2>&1; then
 	echo ''

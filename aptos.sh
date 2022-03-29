@@ -3,7 +3,7 @@
 sudo apt update 
 sudo apt install curl -y
 apt install jq -y
-sudp apt install screen -y 
+sudo apt install screen -y 
 screen -S aptos
 
 curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 2

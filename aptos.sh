@@ -15,7 +15,7 @@ fi
 if git > /dev/null 2>&1; then
 	echo ''
 else
-  apt install git -y
+  sudo apt install git -y
 fi
 
 echo "=+=+=+=+=+=++=+=++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="

@@ -12,6 +12,12 @@ else
   curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
 fi
 
+if git > /dev/null 2>&1; then
+	echo ''
+else
+  apt install git -y
+fi
+
 echo "=+=+=+=+=+=++=+=++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
 
 echo -e "\e[1m\e[32m1. Installing required dependencies... \e[0m" && sleep 1

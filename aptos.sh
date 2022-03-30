@@ -12,6 +12,8 @@ clear
 
 curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 3
 
+sudo apt upgrade -y
+
 sudo apt install jq -y
 
 if docker > /dev/null 2>&1; then

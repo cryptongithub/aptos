@@ -1,10 +1,18 @@
 #!/bin/bash
 
 sudo apt update 
-sudo apt install curl -y && apt install jq -y
+
+if curl > /dev/null 2>&1; then
+	echo ''
+else
+  sudo apt install curl -y
+fi
+
 clear
 
 curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 3
+
+sudo apt install jq -y
 
 if docker > /dev/null 2>&1; then
 	echo ''
